@@ -81,7 +81,7 @@ def train_yolov10(model_size='n', epochs=100, batch=16, imgsz=640, data_yaml='br
         'name': f'YOLOv10{model_size}_BRSSD',
         'patience': 50,
         'save': True,
-        'device': 'cpu',  # Use CPU since no GPU is available
+        'device': 'auto',  # Auto-detect GPU, use CPU if not available
         'workers': 8,
         'project': 'runs/brssd',
         'exist_ok': True,
