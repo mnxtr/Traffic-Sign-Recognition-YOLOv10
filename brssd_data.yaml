@@ -1,0 +1,55 @@
+# BRSSD Dataset Configuration for YOLOv10
+# Bangladeshi Road Sign Symbol Dataset
+
+# Dataset paths
+# Dataset paths
+path: ./BRSSD  # dataset root dir
+train: train/images  # train images (relative to 'path')
+val: valid/images  # val images (relative to 'path')
+test: test/images  # test images (optional)
+
+# Number of classes
+nc: 22
+
+# Class names
+names:
+  0: Ahead-of-the-bridge
+  1: Ahead-the-bus-station
+  2: College-in-front
+  3: Crossroad
+  4: Crossroads-ahead
+  5: Don-t-Overtracking
+  6: Horn-blowing-is-prohibited
+  7: International Road Signal Light
+  8: Left-Turn
+  9: Market-in-front
+  10: Metro Dorp Up Pick up
+  11: Mosque in front
+  12: No Parking
+  13: Pedestrian-crossing
+  14: Petrol-Station-in-front
+  15: Rail-crossing
+  16: Right-turn
+  17: School-in-front
+  18: Side-road-left
+  19: Side-road-right
+  20: Speed-breaker
+  21: Speed-limit
+
+# Dataset information
+download: |
+  # BRSSD Download Instructions
+  # Run: python download_brssd.py --source all
+  # Or manually download from:
+  # - Roboflow Universe: https://universe.roboflow.com
+  # - Kaggle: https://www.kaggle.com/datasets
+  # - GitHub: Search for BRSSD repositories
+
+# Training hyperparameters optimized for BRSSD
+# Uncomment and adjust as needed
+# imgsz: 640
+# batch: 16
+# epochs: 100
+# patience: 50
+# conf: 0.25
+# iou: 0.7

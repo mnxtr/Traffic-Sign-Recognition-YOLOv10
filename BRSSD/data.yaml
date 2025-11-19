@@ -1,0 +1,33 @@
+names:
+- Ahead-of-the-bridge
+- Ahead-the-bus-station
+- College-in-front
+- Crossroad
+- Crossroads-ahead
+- Don-t-Overtracking
+- Horn-blowing-is-prohibited
+- International Road Signal Light
+- Left-Turn
+- Market-in-front
+- Metro Dorp Up Pick up
+- Mosque in front
+- No Parking
+- Pedestrian-crossing
+- Petrol-Station-in-front
+- Rail-crossing
+- Right-turn
+- School-in-front
+- Side-road-left
+- Side-road-right
+- Speed-breaker
+- Speed-limit
+nc: 22
+roboflow:
+  license: CC BY 4.0
+  project: road-sign-detection-in-bd
+  url: https://universe.roboflow.com/mostafinafis/road-sign-detection-in-bd/dataset/1
+  version: 1
+  workspace: mostafinafis
+test: ../test/images
+train: ../train/images
+val: ../valid/images
